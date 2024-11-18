@@ -8,13 +8,18 @@ Hospital readmissions after thyroidectomy represent both a patient care concern 
 
 ## Methods
 - **Data Processing**: Cleaned and preprocessed clinical data, handling missing values and outliers
-- **Feature Engineering**: Created new features from clinical parameters
-- **Model**: Implemented XGBoost, Catboost and LGBM
+- **Feature Engineering**: Created new features from existing clinical parameters
+- **Model**: Implemented XGBoost, Catboost and LightGBM
 - **Evaluation**: Used metrics including AUC ROC, balanced accuracy, precision, recall, and F1-score
 
 ## Key Findings
-- [Insert 2-3 key insights]
-- Model achieved [X]% accuracy in predicting readmissions
-- Identified top factors contributing to readmission risk
+- Readmission rate was <1%, making classification challenging
+- Among the tested models, LightGBM performed the best (LGBM > Catboost > Xgboost)
+- The best model achieved and AUC-ROC of 91% on this highly imbalanced dataset
+- Top factors contributing to readmission risk were:
+  1. TSH/FT4 ratio
+  2. PACU PTH
+  3. Calcium/PTH Ratio
+  4. BMI
 
-Interestingly, a few features that were created such as ______________ contributed significantly to the prediction of readmission, **possibly indicating their use in clinical settings** for risk analysis.
+Interestingly, a few features that were created such as TSH/FT4 ratio and Calcium/PTH ratio contributed significantly to the prediction of readmission, **possibly indicating their use in clinical settings** for risk analysis.
