@@ -15,7 +15,7 @@ Hospital readmissions after thyroidectomy represent both a patient care concern 
 ## Key Findings
 - Readmission rate was <1%, making classification challenging
 - Among the tested models, LightGBM performed the best (LGBM > Catboost > Xgboost)
-- The best model achieved and AUC-ROC of 91% on this highly imbalanced dataset
+- The best model achieved and AUROC of 91% on this highly imbalanced dataset
 - Top factors contributing to readmission risk were:
   1. TSH/FT4 ratio
   2. PACU PTH
